@@ -4,6 +4,9 @@
             <title>WEB1 - html</title>
             <meta charset="utf-8">
             <style>
+                 #active {
+                    color:blue
+                }
                 a {
                     color:black;
                     text-decoration:none
@@ -11,29 +14,41 @@
                 h1 {
                     font-size: 70px;
                     text-align:center;
+                    border-bottom:1px solid gray;
+                    margin:0px;
+                    padding:20px
+                }
+                 #grid ol{
+                    border-right: 1px solid gray;
+                    width: 100px;
+                    margin:0;
+                    padding: 20px
+                }
+                #grid{
+                    display: grid;
+                    grid-template-columns: 150px 1fr;
 
-                }
-                .saw {
-                    color:gray
-                }
-                #active {
-                    color:blue
                 }
             </style>
         </head>
         <body>
             <h1><a href="index.html">W 3 B</W></a></h1>
-            <ol>
-            <li><a href="1.html">HTML</a></li>
-            <li><a href="2.html" class="saw" id="active">CSS</a></li>
-            <li><a href="3.html">JavaScript</a></li>
-            </ol>
-            <h2>CSS</h2>
-            <p><a href="https://www.w3.org/TR/html5/"
-            target="_blank" title="html5 specification">
-            CSS</a> is designed to enable the separation of content 
-            and presentation, including layout, colors, and fonts.</p>
-            <p>Here's it's emblem🤡👇🏻</p>
-            <img src="./css.webp"></img>
+            <div id="grid">
+                <ol>
+                    <li><a href="1.html">HTML</a></li>
+                    <li><a href="2.html">CSS</a></li>
+                    <li><a href="3.html">JavaScript</a></li>
+                    </ol>
+                    <div style="padding-left: 12px">
+                    <h2>CSS</h2>
+                    <p><a href="https://www.w3.org/TR/html5/"
+                    target="_blank" title="html5 specification">
+                    CSS</a> is designed to enable the separation of content 
+                    and presentation, including layout, colors, and fonts.</p>
+                    <p>Here's it's emblem🤡👇🏻</p>
+                    <img src="./css.webp"></img>
+                     </div>
+            </div>
+            
         </body>
     </html>
